@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>ZeroMessenger.R3</id>
+    <version>0.1.0</version>
+    <authors>Annulus Games</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>Icon.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/AnnulusGames/ZeroMessenger</projectUrl>
+    <description>R3 extensions for ZeroMessenger.</description>
+    <copyright>© Annulus Games</copyright>
+    <tags>pubsub eventaggregator R3</tags>
+    <repository type="git" url="https://github.com/AnnulusGames/ZeroMessenger" commit="e75eccaefeec56deec2726a8af2fe8e699fa3e56" />
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="ZeroMessenger" version="0.1.0" exclude="Build,Analyzers" />
+        <dependency id="R3" version="1.2.9" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0">
+        <dependency id="ZeroMessenger" version="0.1.0" exclude="Build,Analyzers" />
+        <dependency id="R3" version="1.2.9" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="ZeroMessenger" version="0.1.0" exclude="Build,Analyzers" />
+        <dependency id="R3" version="1.2.9" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
