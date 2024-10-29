@@ -8,21 +8,12 @@ using ZeroMessenger;
 
 namespace AnnulusClicker
 {
-    public class ItemOnClickFilter : MessageFilter<ClickEvent>
+    public class ItemOnClickFilter : IMessageFilter<ClickEvent>
     {
         private LuaState _itemOnClickLuaState;
         private Shop _shop;
 
-        [Inject]
-        public void Constructor(Shop shop)
-        {
-            _shop = shop;
-            _itemOnClickLuaState = LuaState.Create();
-
-            _itemOnClickLuaState.OpenStandardLibraries();
-        }
-
-        public override async ValueTask InvokeAsync(ClickEvent message, CancellationToken cancellationToken,
+        public async ValueTask InvokeAsync(ClickEvent message, CancellationToken cancellationToken,
             Func<ClickEvent, CancellationToken, ValueTask> next)
         {
             var currentPoint = message.Score;
@@ -43,6 +34,15 @@ namespace AnnulusClicker
             message.Score = currentPoint;
 
             await next(message, cancellationToken);
+        }
+
+        [Inject]
+        public void Constructor(Shop shop)
+        {
+            _shop = shop;
+            _itemOnClickLuaState = LuaState.Create();
+
+            _itemOnClickLuaState.OpenStandardLibraries();
         }
     }
 }

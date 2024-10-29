@@ -18,6 +18,13 @@
       },
       "hash": "b6002a25d18b889216d886ee787fe1878e66be00"
     },
+    "com.annulusgames.zero-messenger.vcontainer": {
+      "version": "https://github.com/AnnulusGames/ZeroMessenger.git?path=src/ZeroMessenger.Unity/Assets/ZeroMessenger.VContainer",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "ee3abe16c75e9a0c8ce252fe72b030d031a7a878"
+    },
     "com.cysharp.r3": {
       "version": "https://github.com/Cysharp/R3.git?path=src/R3.Unity/Assets/R3.Unity",
       "depth": 0,

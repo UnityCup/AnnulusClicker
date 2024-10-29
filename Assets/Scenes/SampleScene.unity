@@ -257,6 +257,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _button: {fileID: 194028255}
+  _pressedSize: {x: 0.9, y: 0.9}
+  _pressDuration: 0.05
+  _pressEase: 2
+  _releaseDuration: 0.05
+  _releaseEase: 2
 --- !u!1 &415733709
 GameObject:
   m_ObjectHideFlags: 0
