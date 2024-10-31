@@ -1,16 +1,16 @@
 ﻿namespace AnnulusClicker
 {
-    public class ClickEvent
+    public struct ClickEvent
     {
         public int Score;
     }
 
-    public class AddScoreEvent
+    public struct AddScoreEvent
     {
         public double Value;
     }
 
-    public class ItemBuyEvent
+    public struct ItemBuyEvent
     {
         public int Index;
     }
